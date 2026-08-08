@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EXCEL ENTERPRISE | Services</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    height:55vh;
+    background:linear-gradient(rgba(0,51,102,.85),rgba(0,51,102,.85)),
+    url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:22px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    color:#003366;
+    font-size:42px;
+}
+
+.title p{
+    color:#666;
+    margin-top:10px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.4s;
+    cursor:pointer;
+}
+
+.service-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.service-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.service-content{
+    padding:25px;
+}
+
+.service-content h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.service-content p{
+    line-height:1.7;
+    color:#555;
+}
+
+.price{
+    margin:20px 0;
+    color:#ff9800;
+    font-size:22px;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#003366;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.4s;
+}
+
+button:hover{
+    background:#ff9800;
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why{
+    background:#003366;
+    color:white;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.why h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.features{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:#ff9800;
+    padding:25px;
+    border-radius:10px;
+    transition:.4s;
+}
+
+.feature:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+    padding:70px 20px;
+    text-align:center;
+    background:white;
+}
+
+.cta h2{
+    color:#003366;
+    font-size:38px;
+}
+
+.cta p{
+    margin:20px auto;
+    max-width:700px;
+    color:#666;
+}
+
+.cta a{
+    display:inline-block;
+    text-decoration:none;
+    background:#ff9800;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    transition:.4s;
+}
+
+.cta a:hover{
+    background:#003366;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#001d3d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<h1>OUR SERVICES</h1>
+
+<p>Professional Solutions Designed to Help You Succeed</p>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<div class="title">
+
+<h2>What We Offer</h2>
+
+<p>Quality services delivered with professionalism and excellence.</p>
+
+</div>
+
+<div class="service-grid">
+
+<div class="service-card">
+
+
+<h3>💻 ICT Solutions</h3>
+
+<p>Computer maintenance, networking, software installation, troubleshooting and technical support.</p>
+
+<div class="price">Professional Service</div>
+
+<button onclick="service('ICT Solutions')">Learn More</button>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80">
+
+<div class="service-content">
+
+<h3>🌐 Website Development</h3>
+
+<p>Modern, responsive and secure websites for businesses, schools, churches and organizations.</p>
+
+<div class="price">Custom Design</div>
+
+<button onclick="service('Website Development')">Learn More</button>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80">
+
+<div class="service-content">
+
+<h3>📈 Business Consultancy</h3>
+
+<p>Business planning, strategic advice and professional consultancy services for growth.</p>
+
+<div class="price">Expert Advice</div>
+
+<button onclick="service('Business Consultancy')">Learn More</button>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80">
+
+<div class="service-content">
+
+<h3>📚 Computer Training</h3>
+
+<p>Practical computer training in Microsoft Office, internet skills and digital literacy.</p>
+
+<div class="price">Hands-on Learning</div>
+
+<button onclick="service('Computer Training')">Learn More</button>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=900&q=80">
+
+<div class="service-content">
+
+<h3>🖨 Printing & Branding</h3>
+
+<p>Professional printing, photocopying, graphic design, branding and office support services.</p>
+
+<div class="price">Affordable Rates</div>
+
+<button onclick="service('Printing & Branding')">Learn More</button>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80">
+
+<div class="service-content">
+
+<h3>🏗 Project Management</h3>
+
+<p>Planning, implementation and monitoring of projects to ensure successful completion.</p>
+
+<div class="price">Professional Management</div>
+
+<button onclick="service('Project Management')">Learn More</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY -->
+
+<section class="why">
+
+<h2>Why Choose Our Services?</h2>
+
+<div class="features">
+
+<div class="feature">✔ Experienced Professionals</div>
+
+<div class="feature">✔ Affordable Pricing</div>
+
+<div class="feature">✔ Modern Technology</div>
+
+<div class="feature">✔ Reliable Customer Support</div>
+
+<div class="feature">✔ Fast Service Delivery</div>
+
+<div class="feature">✔ Quality Guaranteed</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Let's Work Together</h2>
+
+<p>
+Whether you need ICT services, website development, business consultancy, or professional training, EXCEL ENTERPRISE is ready to help you achieve your goals.
+</p>
+
+<a href="#">Request a Quote</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 EXCEL ENTERPRISE | Excellence • Integrity • Innovation</p>
+
+</footer>
+
+<script>
+
+function service(name){
+    alert("Thank you for your interest in our " + name + ". Please contact EXCEL ENTERPRISE for more information.");
+}
+
+// Card click animation
+document.querySelectorAll(".service-card").forEach(card => {
+
+card.addEventListener("click", function(){
+
+this.style.transform="scale(1.02)";
+
+setTimeout(()=>{
+this.style.transform="";
+},250);
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
